@@ -1,5 +1,7 @@
 # epf-app — application d'exemple CI/CD
 
+[![TP2-CI](https://github.com/TempLast/epf-app/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/TempLast/epf-app/actions/workflows/ci.yml)
+
 Petite API Express utilisée comme fil rouge des modules *Intégration et Déploiement Continus* et *Projet CI/CD*.
 
 ## Lancer
