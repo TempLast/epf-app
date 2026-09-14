@@ -32,9 +32,9 @@ jobs:
 
 
   test:
-    runs-on: ubuntu-latest
-    strategy:
-     matrix:
+    rs-on: ubuntu-latest
+    strat
+     maix:
       node : [20, 22]
     timeout-minutes: 10 
     steps:
