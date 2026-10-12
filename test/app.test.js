@@ -56,3 +56,8 @@ test('POST /total refuse un corps invalide', async () => {
   });
   assert.equal(res.status, 400);
 });
+
+test('GET /greet salue la personne', async () => {
+const res = await fetch(`${baseUrl}/greet?name=Ada`);
+assert.deepEqual(await res.json(), { message: 'Bonjour, Ada' });
+});
