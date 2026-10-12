@@ -87,4 +87,9 @@ function createApp() {
   return app;
 }
 
+app.get('/greet', (req, res) => {
+res.json({ message: `Bonjour, ${req.query.name}` });
+});
+
+
 module.exports = { createApp };
