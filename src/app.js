@@ -88,6 +88,11 @@ function createApp() {
 res.json({ message: `Bonjour, ${req.query.name}` });
 });
 
+app.get('/welcome', (req, res) => {
+const name = req.query.name || 'Visiteur';
+res.send(`<h1>Bienvenue, ${name}</h1>`); // ← l'entrée de l'utilisateur devient du HTML
+});
+
   return app;
 }
 
