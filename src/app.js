@@ -84,6 +84,10 @@ function createApp() {
     res.status(500).json({ error: 'Erreur simulée' });
   });
 
+  app.get('/greet', (req, res) => {
+res.json({ message: `Bonjour, ${req.query.name}` });
+});
+
   return app;
 }
 
